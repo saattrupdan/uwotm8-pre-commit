@@ -1,7 +1,6 @@
 - id: uwotm8
   name: uwotm8 (American to British English)
   description: Converts American English spelling to British English spelling in text files
-  entry: uwotm8
+  entry: uwotm8 .
   language: python
   files: '.*'
-  pass_filenames: true
