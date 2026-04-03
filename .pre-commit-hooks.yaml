@@ -2,11 +2,8 @@
   name: uwotm8 (American to British English)
   description: Converts American English spelling to British English spelling in text files
   entry: uwotm8
-  language: python
-  pass_filenames: true
-  types_or:
-    - text
-    - markdown
-    - python
   args:
     - --comments-only
+  language: python
+  pass_filenames: true
+  files: "(.*\.py|.*\.md|.*\.txt)"
