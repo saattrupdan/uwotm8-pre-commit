@@ -56,3 +56,15 @@ install-pre-commit:
 
 check:  ## Lint, format, and type-check the code
 	@git add . && uv run pre-commit run --all-files
+
+bump-major:
+	@uv run python -m src.scripts.versioning --major
+	@echo "Bumped major version!"
+
+bump-minor:
+	@uv run python -m src.scripts.versioning --minor
+	@echo "Bumped minor version!"
+
+bump-patch:
+	@uv run python -m src.scripts.versioning --patch
+	@echo "Bumped patch version!"
