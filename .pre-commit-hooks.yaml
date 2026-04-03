@@ -5,10 +5,6 @@
   language: python
   files: '.*'
   pass_filenames: true
-  require_serial: false
-  always_run: false
-  fail_fast: false
-  verbose: true
 
 - id: uwotm8-check
   name: uwotm8-check (American to British English - check mode)
@@ -17,10 +13,6 @@
   language: python
   files: '.*'
   pass_filenames: true
-  require_serial: false
-  always_run: false
-  fail_fast: false
-  verbose: true
 
 - id: uwotm8-comments-only
   name: uwotm8-comments-only (Python comments and docstrings)
@@ -29,7 +21,3 @@
   language: python
   types_or: [python]
   pass_filenames: true
-  require_serial: false
-  always_run: false
-  fail_fast: false
-  verbose: true
