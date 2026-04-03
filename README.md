@@ -13,9 +13,22 @@ repos:
     rev: v0.0.1
     hooks:
       - id: uwotm8
-      - id: uwotm8-check
-      - id: uwotm8-comments-only
 ```
+
+Optionally, you can add extra arguments to the hook:
+
+```yaml
+repos:
+  - repo: https://github.com/saattrupdan/uwotm8-pre-commit
+    rev: v0.0.1
+    hooks:
+      - id: uwotm8
+        args:
+          - --check
+          - --comments-only
+```
+
+[Here is a list of all the `uwotm8` arguments available](https://i-dot-ai.github.io/uwotm8/usage/#command-line-options).
 
 ### 2. Install the hooks
 
@@ -27,7 +40,7 @@ That's it! The hooks will now run automatically before every commit.
 
 ## Author
 
-- Dan Saattrup Smart ([@saattrupdan](https://github.com/saattrupdan), <dan.smart@alexandra.dk>)
+- Dan Saattrup Smart ([@saattrupdan](https://github.com/saattrupdan), <saattrupdan@gmail.com>)
 
 ## Acknowledgements
 
