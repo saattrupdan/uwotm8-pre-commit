@@ -70,6 +70,12 @@ def set_new_version(major: int, minor: int, patch: int) -> None:
     )
     pyproject_path.write_text(pyproject)
 
+    # Update the version in the README example
+    readme_path = Path("README.md")
+    readme = readme_path.read_text()
+    readme = re.sub(r"v[0-9]+\.[0-9]+\.[0-9]+", f"v{version}", readme, count=1)
+    readme_path.write_text(readme)
+
     # Install newest project
     subprocess.run(["make", "install"])
 
@@ -77,6 +83,7 @@ def set_new_version(major: int, minor: int, patch: int) -> None:
     subprocess.run(["git", "add", ".pre-commit-config.yaml"])
     subprocess.run(["git", "add", "CHANGELOG.md"])
     subprocess.run(["git", "add", "pyproject.toml"])
+    subprocess.run(["git", "add", "README.md"])
     subprocess.run(["git", "add", "uv.lock"])
     subprocess.run(["git", "commit", "-m", f"feat: v{version}"])
     subprocess.run(["git", "tag", f"v{version}"])

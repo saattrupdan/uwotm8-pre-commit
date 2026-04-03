@@ -10,7 +10,7 @@ American English to British English in your code.
 ```yaml
 repos:
   - repo: https://github.com/saattrupdan/uwotm8-pre-commit
-    rev: v0.1.0
+    rev: v0.0.1
     hooks:
       - id: uwotm8
       - id: uwotm8-check
