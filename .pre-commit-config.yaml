@@ -32,17 +32,3 @@ repos:
     -   id: pyrefly-check
         name: Pyrefly (type checking)
         pass_filenames: false
--   repo: local
-    hooks:
-    -   id: frontend-check
-        name: Frontend type check and lint
-        language: system
-        entry: npm run check
-        pass_filenames: false
-        files: ^src/frontend/
--   repo: https://github.com/DavidAnson/markdownlint-cli2
-    rev: v0.22.0
-    hooks:
-    -   id: markdownlint-cli2
-        args:
-          - --fix

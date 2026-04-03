@@ -28,7 +28,9 @@ repos:
           - --comments-only
 ```
 
-[Here is a list of all the `uwotm8` arguments available](https://i-dot-ai.github.io/uwotm8/usage/#command-line-options).
+The `--comments-only` argument is the only one set by default. [Here is a list of all
+the `uwotm8` arguments
+available](https://i-dot-ai.github.io/uwotm8/usage/#command-line-options).
 
 ### 2. Install the hooks
 
