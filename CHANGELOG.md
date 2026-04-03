@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [v0.0.1] - 2026-04-03
+
 ### Added
 
 - First release, featuring the pre-commit hooks `uwotm8`, `uwotm8-check` and
