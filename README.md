@@ -20,7 +20,7 @@ Optionally, you can add extra arguments to the hook:
 ```yaml
 repos:
   - repo: https://github.com/saattrupdan/uwotm8-pre-commit
-    rev: v0.0.1
+    rev: v0.0.3
     hooks:
       - id: uwotm8
         args:

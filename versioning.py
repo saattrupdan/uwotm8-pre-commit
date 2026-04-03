@@ -31,7 +31,7 @@ def bump_patch() -> None:
 
 
 def set_new_version(major: int, minor: int, patch: int) -> None:
-    """Sets a new version.
+    """Set a new version.
 
     Args:
         major:
@@ -46,6 +46,7 @@ def set_new_version(major: int, minor: int, patch: int) -> None:
     Raises:
         RuntimeError:
             If no version can be found in the `pyproject.toml` file.
+
     """
     version = f"{major}.{minor}.{patch}"
 
@@ -65,15 +66,13 @@ def set_new_version(major: int, minor: int, patch: int) -> None:
     # Update the version in the `pyproject.toml` file
     pyproject_path = Path("pyproject.toml")
     pyproject = pyproject_path.read_text()
-    pyproject = re.sub(
-        r'version = "[^"]+"', f'version = "{version}"', pyproject, count=1
-    )
+    pyproject = re.sub(r'version = "[^"]+"', f'version = "{version}"', pyproject)
     pyproject_path.write_text(pyproject)
 
     # Update the version in the README example
     readme_path = Path("README.md")
     readme = readme_path.read_text()
-    readme = re.sub(r"v[0-9]+\.[0-9]+\.[0-9]+", f"v{version}", readme, count=1)
+    readme = re.sub(r"v[0-9]+\.[0-9]+\.[0-9]+", f"v{version}", readme)
     readme_path.write_text(readme)
 
     # Install newest project
@@ -100,6 +99,7 @@ def get_current_version() -> t.Tuple[int, int, int]:
     Raises:
         RuntimeError:
             If no version can be found in the `pyproject.toml` file.
+
     """
     # Get all the version candidates from pyproject.toml
     version_candidates = re.search(
