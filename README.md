@@ -25,14 +25,6 @@ pre-commit install
 
 That's it! The hooks will now run automatically before every commit.
 
-## Available Hooks
-
-| Hook ID | Description | Files |
-| --------- | ------------- | ------- |
-| `uwotm8` | Converts American to British English | `.py`, `.txt`, `.md` |
-| `uwotm8-check` | Check mode - shows what would change | `.py`, `.txt`, `.md` |
-| `uwotm8-comments-only` | Python comments and docstrings only | `.py` |
-
 ## Author
 
 - Dan Saattrup Smart ([@saattrupdan](https://github.com/saattrupdan), <dan.smart@alexandra.dk>)

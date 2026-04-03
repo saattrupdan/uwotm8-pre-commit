@@ -5,19 +5,3 @@
   language: python
   files: '.*'
   pass_filenames: true
-
-- id: uwotm8-check
-  name: uwotm8-check (American to British English - check mode)
-  description: Checks if American English spelling would be converted to British English without modifying files
-  entry: uwotm8 --check
-  language: python
-  files: '.*'
-  pass_filenames: true
-
-- id: uwotm8-comments-only
-  name: uwotm8-comments-only (Python comments and docstrings)
-  description: Converts American English to British English only in Python comments and docstrings
-  entry: uwotm8 --comments-only
-  language: python
-  types_or: [python]
-  pass_filenames: true

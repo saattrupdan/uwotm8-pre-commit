@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+### Removed
+
+- Removed the `uwotm8-check` and `uwotm8-comments-only` hooks, as these can be derived
+  from the `uwotm8` hook by specifying the `args` parameter.
+
 ## [v0.0.1] - 2026-04-03
 
 ### Added
