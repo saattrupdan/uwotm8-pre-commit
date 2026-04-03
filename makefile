@@ -27,11 +27,11 @@ help:
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' makefile | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}'
 
 install: ## Install dependencies
-	@echo "Installing the 'EuroEval' project..."
+	@echo "Installing the 'uwotm8-pre-commit' project..."
 	@$(MAKE) --quiet install-uv
 	@$(MAKE) --quiet install-dependencies
 	@$(MAKE) --quiet install-pre-commit
-	@echo "Installed the 'EuroEval' project."
+	@echo "Installed the 'uwotm8-pre-commit' project."
 
 install-uv:
 	@if [ "$(shell which uv)" = "" ]; then \
