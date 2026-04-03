@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [v0.0.3] - 2026-04-03
+
 ### Added
 
 - Now defaults `args` to `--comments-only`, and defaults to text, markdown and Python

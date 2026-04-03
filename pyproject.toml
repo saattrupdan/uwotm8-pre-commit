@@ -1,6 +1,6 @@
 [project]
 name = "uwotm8-pre-commit"
-version = "0.0.2"
+version = "0.0.3"
 description = "A pre-commit hook wrapper for uwotm8 - converts American English to British English"
 readme = "README.md"
 requires-python = ">=3.9"
